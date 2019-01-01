@@ -107,7 +107,13 @@ function flv(text) {
 }
 
 function chc(description, choice1, choice2){
-
+  var identifier = 'choice_' + t;
+  textEl.setAttribute('id', identifier)
+  const descriptor = document.createElement('p');
+  descriptor.innerHTML = description;
+  flvTextDiv.appendChild(descriptor);
+  $("#" + identifier).hide();
+  $("#" + identifier).fadeIn();
 }
 
 //const track = [flv(text[0]), flv(text[1]), flv(text[2])];

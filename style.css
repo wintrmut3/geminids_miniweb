@@ -1,0 +1,49 @@
+*{
+  text-align: center;
+  font-family: 'Merriweather', sans-serif;
+  padding: 0px;
+  margin:0px;
+}
+
+.button{
+  background-color: white;
+  padding: 10px;
+  margin: 30px;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 6px;
+  transition: 0.8s;
+}
+.button:hover{
+  background-color:#1c1c1c;
+  color:white;
+  padding: 20px;
+  border:1px solid white;
+
+}
+#heading{
+  background-color: #111;
+
+  /* text-decoration: underline; */
+  color: white;
+  padding: 10px;
+}
+
+p{
+  margin: 5px;
+  line-height: 1.4;
+  padding: 10px;
+  font-size: 20px;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+body{
+  background-color: #1c1c1c;
+  color: #FFFFFF;
+}

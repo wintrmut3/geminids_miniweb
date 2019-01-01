@@ -19,9 +19,7 @@
 .button:hover{
   background-color:#1c1c1c;
   color:white;
-  padding: 20px;
   border:1px solid white;
-
 }
 #heading{
   background-color: #111;

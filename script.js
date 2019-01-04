@@ -107,8 +107,6 @@ audio.loop = true;
 audio.volume = 0.1;
 audio.play();
 
-
-
 const flvText = document.getElementById('flvtxt');
 const flvTextDiv = document.getElementById('flvTextBox');
 
@@ -163,13 +161,13 @@ function chc(array) {
   $("#" + identifier).fadeIn();
 
   $("#" + identifier_b1).click(function() {
-    $("#" + identifier_b1).fadeOut(500);
-    $("#" + identifier_b2).fadeOut(500);
+    $("#" + identifier_b1).fadeOut(300);
+    $("#" + identifier_b2).fadeOut(300);
     choiceFlags[choiceNum] = 1;
   })
   $("#" + identifier_b2).click(function() {
-    $("#" + identifier_b1).fadeOut(500);
-    $("#" + identifier_b2).fadeOut(500);
+    $("#" + identifier_b1).fadeOut(300);
+    $("#" + identifier_b2).fadeOut(300);
     choiceFlags[choiceNum] = 2;
   })
 }
@@ -213,12 +211,14 @@ function playStep(timestep) {
 // }
 // scrollingAuto();
 function autoScroll(){
-  setInterval(function(){ console.log("SCROLLING..."); window.scrollBy(0,1) }, 10); 
+  var x = setInterval(function(){ console.log("SCROLLING..."); window.scrollBy(0,8) }, 10);
+  setTimeout(function(){clearInterval(x);}, 500);
   //setInterval(function(){ window.scrollBy(10); console.log("SCROLLING..."); }, 10);
 }
-autoScroll()
+//autoScroll()
 function update() {
   timeline[t](params[t]);
+  autoScroll()
 }
 
 $(document).ready(function() {
